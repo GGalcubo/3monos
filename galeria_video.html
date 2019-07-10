@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>3|Monos | V.5</title>
+		<meta name="author" content="Alvaro Trigo Lopez" />
+		<meta name="description" content="fullPage fixed header and footer." /> 
+		<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+		<meta name="Resource-type" content="Document" />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<!-- BOOTSTRAP CORE -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" >
+		<!-- ESTILOS -->
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+		<link rel="stylesheet" type="text/css" href="css/examples.css" />
+		<link rel='stylesheet' href='css/unite-gallery.css' type='text/css' />
+		<link rel='stylesheet' href='css/ug-themes-gallery/skin-right-no-thumb.css' type='text/css' />
+		<link rel='stylesheet' href='css/ug-themes-gallery/skin-right-thumb.css' type='text/css' />
+		<link rel='stylesheet' href='css/ug-themes-gallery/skin-right-title-only.css' type='text/css' />
+		<link rel="stylesheet" href="css/estilo4.css">
+		<!-- FAVICON -->
+		<link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="img/fav/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="img/fav/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="img/fav/manifest.json">
+		<link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="img/fav/favicon.ico">
+		<meta name="msapplication-config" content="img/fav/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+		<!-- FIN DE FAVICON -->
+		<script type='text/javascript' src="http://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
+		<script type='text/javascript' src='js/unitegallery.js'></script>
+		<!-- JS DE TIPO DE GALERIA -->
+		<!-- <script type='text/javascript' src='js/ug-themes-gallery/ug-theme-video.js'></script> -->
+		<script type='text/javascript' src='js/ug-themes-gallery/ug-theme-slider.js' ></script>
+		<script type='text/javascript' src="js/jquery.ajaxchimp.min.js"></script>
+		<script type='text/javascript' src="js/script.js"></script>
+		<script type="text/javascript" src="js/galeriaJson.js"></script>
+		<script type="text/javascript" src="js/analizaUrl.js"></script>
+		<script type="text/javascript" src="js/examples.js"></script>
+		<script type="text/javascript">            
+			$(document).ready(function(){
+				getHtmlGaleriaVideos();
+			});                 
+		</script>
+		<style>
+			body {
+				background-image: url(../img/seccion2.png);
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+			}
+		</style>
+    </head>
+    <body>
+		<div id="fullpage">
+			<div class="section home" id="section0">
+				<div class="intro">
+					<div id="galeriaVideos" style="display:none;"></div>
+                                        <button class="btn btn-main btn-lg" onclick="javascript:window.history.back();" type="button" id="volver" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Volviendo...">Volver</button>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>	

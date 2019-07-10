@@ -1,0 +1,2 @@
+<img alt="Video en vimeo" data-type="vimeo" src="https://i.ytimg.com/vi/gMaDhkNJA2g/sddefault.jpg" data-image="https://i.ytimg.com/vi/gMaDhkNJA2g/sddefault.jpg" data-description="Vimeo Video Description" data-videoid="97981374" style="display:none">
+<img alt="Waimea cliff j" data-type="vimeo" src="https://i.ytimg.com/vi/sogCtOe8FFY/mqdefault.jpg" data-image="https://i.ytimg.com/vi/sogCtOe8FFY/sddefault.jpg" data-description="Waimea cliff jump descr" data-videoid="97981374" style="display:none">

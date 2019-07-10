@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>3|Monos | V.5</title>
+        <meta name="author" content="Alvaro Trigo Lopez" />
+        <meta name="description" content="fullPage fixed header and footer." />
+        <meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+        <meta name="Resource-type" content="Document" />
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- BOOTSTRAP CORE -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" >
+        <!-- ESTILOS -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/examples.css" />
+        <link rel='stylesheet' href='css/unite-gallery.css' type='text/css' />
+        <link rel='stylesheet' href='css/ug-theme-default.css' type='text/css' />
+        <link rel="stylesheet" href="css/estilo4.css">
+
+        <!-- FAVICON -->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="img/fav/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="img/fav/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="img/fav/manifest.json">
+        <link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="img/fav/favicon.ico">
+        <meta name="msapplication-config" content="img/fav/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <!-- FIN DE FAVICON -->
+
+        <style>
+            /* Style for our header texts
+            * -------------------------------------- */
+            h1{
+                font-size: 5em;
+                font-family: arial,helvetica;
+                color: #fff;
+                margin:0;
+                padding:0;
+            }
+            .intro p{
+                color: #fff;
+            }
+            /* Centered texts in each section
+            * --------------------------------------- */
+            .section{
+                text-align:center;
+            }
+            /* Fixed header and footer.
+
+            * --------------------------------------- */
+            #header, #footer{
+                position:fixed;
+                height: 50px;
+                display:block;
+                width: 100%;
+                background: #333;
+                z-index:9;
+                text-align:center;
+                color: #f2f2f2;
+                padding: 20px 0 0 0;
+            }
+            #header{
+                top:0px;
+            }
+            #footer{
+                bottom:0px;
+            }
+            /* Bottom menu
+            * --------------------------------------- */
+            #infoMenu {
+                bottom: 80px;
+            }
+            #infoMenu li a {
+                color: #fff;
+                z-index: 999;
+            }
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script src="http://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type='text/javascript' src='js/unitegallery.js'></script>
+        <script src='js/ug-themes-gallery/ug-theme-tilesgrid.js' type='text/javascript'></script> 
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/script.js"></script>
+        <script type="text/javascript" src="js/galeriaJson.js"></script>
+        <script type="text/javascript" src="js/examples.js"></script>
+    </head>
+    
+    <body>
+
+        <nav id="barra" class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#home"><img src="img/3mLogoChico2.png" alt="Logo de 3 Monos"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#concepto">Concepto</a></li>
+                        <li class="separador">|</li>
+                        <li><a href="#trabajo">Trabajo</a></li>
+                        <li class="separador">|</li>
+                        <li><a href="#contacto">Contacto</a></li> 
+                    </ul>
+                </div>    
+            </div>
+        </nav>
+
+        <div id="fullpage">
+        
+            <div class="section home" id="section0">
+                <div class="intro">
+                    <div class="mono">
+                        <img class="img-responsive center-block" src="img/3mMono2.png" alt="Logo Mono">
+                    </div>
+                    <div class="logo">
+                        <img class="img-responsive center-block" src="img/3mLogo2.png" alt="Logo 3 Monos">
+                    </div>
+                    <div class="flecha">
+                        <img class="img-responsive center-block" src="img/flecha.png" alt="Flecha hacia abajo">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section concepto" id="section1">
+                <div class="intro ">
+                    <p>Decimos lo necesario.
+                    <br>Escuchamos lo suficiente.
+                    <br>Observamos lo concreto.
+                    <br><span style="color:#1E120D;">HACEMOS.</span></p>
+                </div>
+            </div>
+            
+            <div class="section trabajo" id="section2"> 
+                <div class="intro">
+                  <div id="gallery" style="display:none;"></div>
+                </div>
+            </div>
+
+            <div class="section contacto contact container-fluid" id="section3">
+            
+                <div class="intro">
+                
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title st-center">
+                                <p>CONTACTO</p>
+                    <!--            
+                            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, placeat. Recusandae error eaque, ea nihil. Blanditiis tenetur quae sint quisquam officiis aliquam, possimus odio doloribus quas, error aliquid, commodi voluptatum.</h4>
+                    -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="contact-form" role="form">
+                                <input type="text" class="form-control" id="fname" name="fname" placeholder="Nombre">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                <input type="text" class="form-control" id="subj" name="subj" placeholder="Asunto">
+                                <textarea id="mssg" name="mssg" placeholder="Descripción" class="form-control" rows="10"></textarea>
+                                <button class="btn btn-main btn-lg" type="submit" id="send" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Sending...">Enviar</button>
+                            </form>
+                            <div id="result-message" role="alert"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </body>
+
+</html>	
